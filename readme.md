@@ -34,7 +34,7 @@ const result1 = await tavily.search({
   search_depth: 'advanced',
   include_answer: true,
   include_images: true,
-  max_rules: 10
+  max_results: 10
 })
 console.log(result1)
 ```
