@@ -120,6 +120,9 @@ export class TavilyClient {
       })
       .json<tavily.SearchResponse>()
 
-    return pruneNullOrUndefined(res).results?.map(pruneNullOrUndefined)
+    return pruneNullOrUndefined({
+      ...res,
+      results: res.results?.map(pruneNullOrUndefined)
+    })
   }
 }
