@@ -1,7 +1,7 @@
 {
   "name": "tavily",
   "version": "0.1.0",
-  "description": "SDK for the Tavily Search API.",
+  "description": "TS SDK for the Tavily search API which is tailored for LLM agents.",
   "author": "Travis Fischer <travis@transitivebullsh.it>",
   "license": "MIT",
   "repository": {
