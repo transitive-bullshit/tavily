@@ -7,7 +7,7 @@
 
 # Tavily <!-- omit from toc -->
 
-> [Tavily Search](https://tavily.com) is a search API tailored for LLM Agents.
+> [Tavily](https://tavily.com) is a search API tailored for LLM Agents.
 
 ## Install
 
