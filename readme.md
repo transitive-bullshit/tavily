@@ -39,6 +39,8 @@ const result1 = await tavily.search({
 console.log(result1)
 ```
 
+See the [Tavily docs](https://docs.tavily.com/docs/tavily-api/introduction) for more info.
+
 ## License
 
 MIT © [Travis Fischer](https://twitter.com/transitive_bs)
