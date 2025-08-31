@@ -113,9 +113,12 @@ export class TavilyClient {
 
     const res = await this.ky
       .post('search', {
+        headers: {
+          'Content-Type': 'application/json',
+          Authorization: `Bearer ${this.apiKey}`
+        },
         json: {
-          ...options,
-          api_key: this.apiKey
+          ...options
         }
       })
       .json<tavily.SearchResponse>()
