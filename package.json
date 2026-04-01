@@ -1,19 +1,17 @@
 {
   "name": "tavily",
-  "version": "1.0.2",
-  "description": "TS SDK for the Tavily search API which is tailored for LLM agents.",
-  "author": "Travis Fischer <travis@transitivebullsh.it>",
+  "version": "2.0.0",
+  "description": "Deprecated: Use @tavily/core instead. https://www.npmjs.com/package/@tavily/core",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "transitive-bullshit/tavily"
+    "url": "https://github.com/tavily-ai/tavily-js"
   },
   "packageManager": "pnpm@9.2.0",
   "engines": {
     "node": ">=18"
   },
   "type": "module",
-  "source": "./src/index.ts",
   "types": "./dist/index.d.ts",
   "sideEffects": false,
   "exports": {
@@ -29,35 +27,15 @@
   "scripts": {
     "build": "tsup",
     "clean": "del dist",
-    "prebuild": "run-s clean",
-    "pretest": "run-s build",
-    "prepare": "husky",
-    "precommit": "lint-staged",
-    "test": "run-s test:*",
-    "test:format": "prettier --check \"**/*.ts\"",
-    "test:lint": "eslint .",
-    "test:typecheck": "tsc --noEmit"
+    "prebuild": "run-s clean"
   },
   "devDependencies": {
-    "@fisch0920/eslint-config": "^1.3.1",
-    "@types/node": "^20.14.2",
     "del-cli": "^5.1.0",
-    "eslint": "^8.57.0",
-    "husky": "^9.0.11",
-    "lint-staged": "^15.2.2",
-    "np": "^10.0.5",
     "npm-run-all2": "^6.1.2",
-    "prettier": "^3.2.5",
     "tsup": "^8.0.2",
     "typescript": "^5.4.5"
   },
-  "lint-staged": {
-    "*.{ts,tsx}": [
-      "eslint --fix",
-      "prettier --ignore-unknown --write"
-    ]
-  },
   "dependencies": {
-    "ky": "^1.3.0"
+    "@tavily/core": "^0.7.2"
   }
 }
